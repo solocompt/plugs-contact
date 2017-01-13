@@ -20,7 +20,8 @@ setup(
     author_email='ricardolobo@soloweb.pt',
     install_requires = [
         'plugs_core',
-        'plugs_mail'
+        'plugs_mail',
+        'plugs_auth>=0.1.5'
     ],
     classifiers=[
         'Environment :: Web Environment',
