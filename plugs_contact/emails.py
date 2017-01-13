@@ -12,7 +12,6 @@ class ContactCreated(PlugsMail):
     template = 'CONTACT_CREATED'
     context = ('Contact', )
     description = 'Email sent to staff users notifying of new contact'
-    subject = 'Recebemos novo contato.'
 
 class ContactReceived(PlugsMail):
     """
@@ -21,4 +20,3 @@ class ContactReceived(PlugsMail):
     template = 'CONTACT_RECEIVED'
     context = ('Contact', )
     description = 'Email sent to user confirming the contact reception'
-    subject = 'Recebemos o teu pedido de informações'
