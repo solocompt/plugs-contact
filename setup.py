@@ -55,7 +55,11 @@ setup(
         'plugs_contact',
     ],
     include_package_data=True,
-    install_requires=[],
+    install_requires=[
+        'plugs_core',
+        'plugs_mail',
+        'plugs_auth>=0.1.5'
+    ],
     license="MIT",
     zip_safe=False,
     keywords='plugs-contact',
