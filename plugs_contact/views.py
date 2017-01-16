@@ -37,5 +37,5 @@ class ContactViewSet(CreateViewSet):
         contact = serializer.save()
         data = {'contact': contact}
         payload = {'head': serializer.data.get('email'), 'body': serializer.data.get('message')}
-        utils.to_staff(emails.ContactCreated, language, **data)
+        utils.to_staff(emails.ContactCreated, **data)
         utils.to_email(emails.ContactReceived, contact.email, language, **data)

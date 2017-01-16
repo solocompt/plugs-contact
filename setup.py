@@ -57,7 +57,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'plugs_core',
-        'plugs_mail',
+        'plugs_mail>=0.1.5',
         'plugs_auth>=0.1.5'
     ],
     license="MIT",
