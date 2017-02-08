@@ -16,7 +16,12 @@ class Contact(mixins.Timestampable, models.Model):
     message = models.TextField()
 
     def __str__(self):
-        return self.subject
+        """
+        Return subject or call method on super is
+        subject is null
+        """
+        return self.subject or super(Contact, self).__str__()
+
     
     # pylint: disable=R0903
     class Meta:
