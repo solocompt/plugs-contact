@@ -46,10 +46,10 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 setup(
     name='plugs-contact',
     version=version,
-    description="""Your project description goes here""",
+    description="""APP to manage contact forms""",
     long_description=readme + '\n\n' + history,
-    author='Ricardo Lobo',
-    author_email='ricardolobo@soloweb.pt',
+    author='Solo',
+    author_email='geral@solo.com.pt',
     url='https://github.com/solocompt/plugs-contact',
     packages=[
         'plugs_contact',
@@ -57,23 +57,18 @@ setup(
     include_package_data=True,
     install_requires=[
         'plugs_core',
-        'plugs_mail>=0.1.5',
-        'plugs_auth>=0.1.5'
+        'plugs_mail>=0.1.5,<0.3.0',
+        'plugs_auth>=0.1.5,0.3.0'
     ],
     license="MIT",
     zip_safe=False,
     keywords='plugs-contact',
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Framework :: Django',
-        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 1.11',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3'
     ],
 )
